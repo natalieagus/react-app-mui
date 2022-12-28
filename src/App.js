@@ -3,7 +3,8 @@ import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import Topbar from "./scenes/global/Topbar";
 import Dashboard from "./scenes/dashboard";
-import { Sidebar } from "react-pro-sidebar";
+import Sidebar from "./scenes/global/Sidebar";
+
 function App() {
   const [theme, colorMode] = useMode(); //  we have access to the theme and colorMode now
 
