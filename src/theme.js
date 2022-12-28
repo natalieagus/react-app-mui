@@ -123,7 +123,7 @@ export const tokens = (mode) => ({
       }),
 });
 
-// mui theme settings
+// mui theme settings, so we can useTheme later
 export const themeSettings = (mode) => {
   const colors = tokens(mode);
   return {
@@ -198,7 +198,7 @@ export const themeSettings = (mode) => {
 
 // context for color mode
 export const ColorModeContext = createContext({
-  toggleColorMode: () => {},
+  toggleColorMode: () => {}, // create an empty function first
 });
 
 // custom hook useMode
@@ -207,6 +207,8 @@ export const useMode = () => {
 
   const colorMode = useMemo(
     () => ({
+      // setting the toggleColorMode context value into a function that sets the mode (which is a state, that receives the previous value of the state when called automatically)
+      // if the new state is computed using the previous state, you can pass a function to setState. The function will receive the previous value, and return an updated value
       toggleColorMode: () =>
         setMode((prev) => (prev === "light" ? "dark" : "light")),
     }),
