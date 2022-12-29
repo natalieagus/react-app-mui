@@ -77,7 +77,7 @@ const Form = () => {
                 name="firstName"
                 error={!!touched.firstName && !!errors.firstName} // !! forces it to be a boolean
                 helperText={touched.firstName && errors.firstName}
-                sx={{ gridColumn: "span 2" }}
+                sx={{ gridColumn: "span 2" }} // spans 2 columns
               />
               <TextField
                 fullWidth
