@@ -52,3 +52,11 @@ If no array is provided, a new value will be computed on every render.
 
 - It'll be equivalent to `const value = ...`
 - Using `useMemo()` with an empty dependencies array will calculate the value only once, on mount.
+
+# yup
+
+Used to validate form content
+
+# nivo
+
+Very pretty and nice charts
