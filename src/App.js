@@ -7,6 +7,7 @@ import Sidebar from "./scenes/global/Sidebar";
 import Team from "./scenes/team";
 import Contacts from "./scenes/contacts";
 import Invoices from "./scenes/invoices";
+import Form from "./scenes/form";
 
 function App() {
   const [theme, colorMode] = useMode(); //  we have access to the theme and colorMode now
@@ -24,6 +25,7 @@ function App() {
               <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
+              <Route path="/form" element={<Form />} />
             </Routes>
           </main>
         </div>
