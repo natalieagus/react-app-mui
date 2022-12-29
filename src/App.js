@@ -11,7 +11,8 @@ import Form from "./scenes/form";
 import Calendar from "./scenes/calendar/calendar";
 import FAQ from "./scenes/faq";
 import Bar from "./scenes/bar";
-import PieChart from "./components/PieChart";
+import PieChart from "./scenes/pie";
+import LineChart from "./scenes/line";
 
 function App() {
   const [theme, colorMode] = useMode(); //  we have access to the theme and colorMode now
@@ -34,6 +35,7 @@ function App() {
               <Route path="/faq" element={<FAQ />} />
               <Route path="/bar" element={<Bar />} />
               <Route path="/pie" element={<PieChart />} />
+              <Route path="/line" element={<LineChart />} />
             </Routes>
           </main>
         </div>
