@@ -33,6 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "/react-app-mui",
   "browserslist": {
     "production": [
       ">0.2%",
