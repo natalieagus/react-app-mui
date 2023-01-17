@@ -1,4 +1,5 @@
 import { useState } from "react";
+import profilePic from "../../assets/pic.png";
 // nice sidebar, can put background menu, nest sidebar, collapse, etc
 import { ProSidebar, Menu, MenuItem, menuClasses } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
@@ -100,7 +101,7 @@ const Sidebar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/user.png`}
+                  src={profilePic}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
@@ -111,10 +112,10 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  John Doe
+                  White Floof
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[100]}>
-                  VP Fancy Admin
+                  VP Woof Expawt
                 </Typography>
               </Box>
             </Box>
