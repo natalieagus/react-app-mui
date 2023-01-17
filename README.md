@@ -5,6 +5,11 @@ https://www.youtube.com/watch?v=wYpCWwD1oz0
 1. Components can be reused anywhere
 2. But scenes are what describes each page
 
+# Pesticide
+
+Chrome extension to view elements easily, outlining each element to better see placement on the page. Also can click on "grid".
+<img src="/assets/images/README/2022-12-29-23-06-27.png"  class="center_seventy"/>
+
 # Tailwind shades
 
 Use this to create variation shades from a primary color
